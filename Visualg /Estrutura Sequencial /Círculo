@@ -1,0 +1,14 @@
+// Problema "circulo"
+// Fazer um programa para ler o valor "r" do raio de um círculo, e depois mostrar o valor da área do
+círculo com três casas decimais. A fórmula da área do círculo é a seguinte: 𝑎𝑟𝑒𝑎 = 𝜋. 𝑟²
+
+Var
+   raio : real
+
+
+Inicio
+      escreva("Digite o valor do raio do círculo: ")
+                      leia(raio)
+      escreva("AREA = ", (Pi * Exp(raio,2)):1:3)
+
+Fimalgoritmo
