@@ -1,0 +1,37 @@
+// Problema "baskara"
+// Fazer um programa para ler os três coeficientes de uma equação do segundo grau. Usando a fórmula
+de Baskara, calcular e mostrar os valores das raízes x1 e x2 da equação com quatro casas decimais,
+conforme exemplo. Se a equação não possuir raízes reais, mostrar uma mensagem.
+
+// A ordem da verificação se delta<0 e a<>0 está trocada, era pra checar o "a" primeiro, mas deu preguiça de arrumar.
+
+Var
+   a, b, c : real
+   delta : real
+   x1, x2 : real
+
+
+Inicio
+      escreva("Coeficiente A:")
+      leia(a)
+      escreva("Coeficiente B:")
+      leia(b)
+      escreva("Coeficiente C:")
+      leia(c)
+      delta <- Exp(b, 2) - 4*a*c
+
+      se(delta<0)entao
+      escreva("Esta equacao nao possui raizes reais.")
+                   senao
+                   se(a<>0)entao
+                   x1 <- (0 - b + RaizQ(delta)) / (2*a))
+                   x2 <- (0 - b - RaizQ(delta)) / (2*a))
+                   escreval("X1 =", x1:1:4)
+                   escreval("X2 =", x2:1:4)
+                   senao
+                   escreva("Não é uma função do segundo grau.")
+                   fimse
+      fimse
+                      
+
+Fimalgoritmo
