@@ -1,0 +1,29 @@
+// Problema "multiplos" (adaptado de URI 1044)
+// Fazer um programa para ler dois números inteiros, e dizer se um número é múltiplo do outro. Os
+números podem ser digitados em qualquer ordem.
+
+Var
+   x1 , x2 : inteiro
+
+
+Inicio
+      escreval("Digite dois numeros inteiros:")
+      leia(x1)
+      leia(x2)
+      
+      se(x1>x2)entao
+                    se(x1%x2 = 0)entao
+                    escreval("Sao multiplos")
+                    senao
+                    escreval("Nao sao multiplos")
+                    fimse
+      senao
+                    se(x2%x1 = 0)entao
+                    escreval("Sao multiplos")
+                    senao
+                    escreval("Nao sao multiplos")
+                    fimse
+      fimse
+
+
+Fimalgoritmo
