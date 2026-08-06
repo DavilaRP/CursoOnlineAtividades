@@ -1,0 +1,26 @@
+// Problema "temperatura"
+// Deseja-se converter uma medida de temperatura da escala Celsius para Fahrenheit ou vice-versa. Para
+isso, você deve construir um programa que leia a letra "C" ou "F" indicando em qual escala vai ser
+informada uma temperatura. Em seguida o programa deve mostrar a temperatura na outra escala com
+duas casas decimais.
+
+Var
+ t : real
+ medida : caractere
+
+Inicio
+      escreva("Voce vai digitar a temperatura em qual escala (C/F)?")
+                     leia(medida)
+      escolha medida
+      caso "C"
+           escreva("Digite a temperatura em Celsius:")
+           leia(t)
+           escreval("Temperatura equivalente em Fahrenheit: ", ((t*9/5)+32):1:2)
+      caso "F"
+           escreval("Digite a temperatura em Fahrenheit:")
+           leia(t)
+           escreval("Temperatura equivalente em Celsius: ", ((t-32)*5/9):1:2)
+      fimescolha
+
+
+Fimalgoritmo
