@@ -1,0 +1,41 @@
+// Problema "lanchonete" (adaptado de URI 1038)
+// Uma lanchonete possui vários produtos. Cada produto possui um código
+e um preço. Você deve fazer um programa para ler o código e a
+quantidade comprada de um produto (suponha um código válido), e daí
+informar qual o valor a ser pago, com duas casas decimais, conforme
+tabela de produtos abaixo. 
+| Código |  Preço  |
+|   1    | R$ 5,00 |
+|   2    | R$ 3,50 |
+|   3    | R$ 4,80 |
+|   4    | R$ 8,90 |
+|   5    | R$ 7,32 |
+
+Var
+  codigo , quantidade : inteiro
+  preco : real
+
+
+Inicio
+      escreva("Codigo do produto comprado:")
+      leia(codigo)
+      escreva("Quantidade Comprada:")
+      leia(quantidade)
+      
+      escolha codigo
+      caso 1
+      preco <- 5
+      caso 2
+      preco <- 3.5
+      caso 3
+      preco <- 4.8
+      caso 4
+      preco <- 8.9
+      caso 5
+      preco <- 7.32
+      fimescolha
+      
+      escreva("Valor a pagar: ", (preco * quantidade):1:2)
+
+
+Fimalgoritmo
